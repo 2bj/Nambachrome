@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="/j/app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/j/jquery-1.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/j/background.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    chrome.browserAction.onClicked.addListener(function(tab) {
+        goToInbox();
+        checkMail();
+    });
+
+    chrome.tabs.onUpdated.addListener(function(tabId, changeInfo) {
+        if (changeInfo.url && isInboxUrl(changeInfo.url)) {
+            checkMail();
+        }
+    });
+    </script>
+</head>
+<body onload="backgroundInit();"></body>
+</html>

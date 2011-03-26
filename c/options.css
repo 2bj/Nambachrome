@@ -1,0 +1,74 @@
+html, body {
+    width:100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:#004b60;
+    background-image:url("/i/options_bg.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+#c-block {
+    width: 350px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -175px;
+    margin-top: -150px;
+}
+
+input {
+    padding: 5px;
+    font-size: 15px;
+    text-shadow: 0px 1px 0px #fff;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 150px;
+}
+
+input:focus {
+    border: 1px solid #fafafa;
+    box-shadow: 0px 0px 10px #000;
+}
+
+label {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.13);
+    display: inline-block;
+    width: 4em;
+    color: #000;
+}
+
+#status {
+    font-size: 13px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.13);
+    height: 20px;
+}
+    #status span {
+        display: none;
+    }
+
+#forkme {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    z-index: 100;
+}
+
+#buttons {
+    font-size: 13px;
+}
+    #buttons a {
+        color: #fff;
+    }
+
+#save {
+    background-color: #EDF24B;
+    border: none;
+    height: 20px;
+    cursor: pointer;
+}
