@@ -1,6 +1,6 @@
 {
     "name": "Nambachrome (βeta)",
-    "version": "0.1.0",
+    "version": "0.1",
     "description": "Показывает количество непрочитанных писем и по клику на иконку переходит в почту.",
     "browser_action": {
         "default_icon": "/i/48g.png"
